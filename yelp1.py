@@ -3,11 +3,11 @@ import json
 
 from requests.models import Response
 url = 'https://api.yelp.com/v3/businesses/search'
-key = 'nononoNoKEYforYou'
+key = 'nononoNOkeyForYou'
 headers = {
     'Authorization': 'Bearer %s' % key
     }
-parameters = {'term': 'seafood', 'location':'Charlottesville, VA', 'radius': 5000, 'limit': 5}
+parameters = {'term': 'burgers', 'location':'Charlottesville, VA', 'radius': 5000, 'limit': 5}
 
 #Making Request to the API
 req = requests.get(url, params=parameters, headers=headers)
